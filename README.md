@@ -12,12 +12,6 @@
 
 -------
 ## Introduction
-There is a a shelter located in Texas that has accepted more than 167K dogs and cats during the lasts years. The main problem they have is that they need to speed up the addoption of the animals so as they have empty places to receive more animals, as during the lasts years they had to restrict the number of intakes due to limitations. 
-So as to improve their actions and be more efficient, they want something sutomatic that tells them the expected time the animal will stay in the shelter, if the animal is staying 1'2 weeks thye might not need to take special care about promoting the animal but if they know that the specific animal will take longer ddue to its conditions they can focus effeorts promoting it. 
-As we have seem the time the animal needs to be addopted can vary a lot between breeds, their health conditions, age, so is very complicated for them to estimate the time. 
-In this graph below we can see the boxplot of the time the animals stay in the shelter 
-
-
 
 In Texas, there is a shelter that has cared for over 167,000 dogs and cats in recent years. However, the shelter faces a significant challenge: space limitations. Due to these constraints, they have had to restrict the number of animals they can intake, leaving many in need of care without help.
 
@@ -151,4 +145,4 @@ To stop the service, press `Ctrl+C` in the terminal.
 the jupyter notebook called ¨predict_test_AWS.ipynb¨is ready with the ULR of the service and can be used.
 See here how to use it:
 
-[![Watch the video demo](https://img.youtube.com/vi/yXJ7W0A7if4/0.jpg)](https://youtu.be/yXJ7W0A7if4)
+[![Watch the video demo](https://img.youtube.com/vi/9WMYAk-v2j4/0.jpg)](https://youtu.be/9WMYAk-v2j4)
