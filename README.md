@@ -1,5 +1,5 @@
 
-# Shelter Animal Adoption Prediction
+# Animal Adoption Days Prediction
 ![Alt text](image.png)
 
 ## Table of Contents
@@ -112,4 +112,4 @@ To stop the service, press `Ctrl+C` in the terminal.
 ## Using model in AWS
 the jupyter notebook called ¨predict_test_AWS.ipynb¨is ready with the ULR of the service and can be used.
 See here how to use it:
-[Title](<../../../../../Desktop/Screen Recording 2024-11-25 at 20.53.35.mov>)
+[Title](<AWS_uage.mov>)
