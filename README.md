@@ -10,9 +10,11 @@
 5. [Steps to Create the Docker Container and Run the Service](#steps-to-create-the-docker-container-and-run-the-service)
 6. [Usage](#usage)
 
+-------
 ## Introduction
 This project aims to predict the time (in days) that an animal will spend in the shelter before being adopted. The shelter has limited capacity, and it is crucial to determine whether an animal will be adopted within a short timeframe (approximately two weeks) or take longer. This helps prioritize efforts for animals facing adoption challenges.
 
+-------
 ## Dataset
 The dataset used comes from real records of the **Austin Animal Shelter** in Texas. You can explore the source data on their official website:  
 [City of Austin Animal Shelter](https://www.austintexas.gov/austin-animal-center).
@@ -20,16 +22,17 @@ The dataset used comes from real records of the **Austin Animal Shelter** in Tex
 The dataset consists of two main parts:
 - **Intakes**: Records of animal intakes at the shelter. [Details](https://data.austintexas.gov/Health-and-Community-Services/Austin-Animal-Center-Intakes/wter-evkm/about_data)
 - **Outcomes**: Records of the outcomes for those same animals. [Details](https://data.austintexas.gov/Health-and-Community-Services/Austin-Animal-Center-Outcomes/9t4d-g238/about_data)
-
+ 
 ### Dataset Summary
 - Records: 2014–11/10/2024 (date downloaded).
 - The dataset was created by merging `intakes` and `outcomes` with adjustments:
   1. For animals with multiple intakes, the outcome closest to the intake was used.
   2. Overlapping intake periods for the same animal were removed.
   3. Only `Adoption` outcomes were kept.
+  4. Only animals with aninal_type in Dog or Cat are considered.
 
 Detailed steps can be found in the `time_shelter_dataset` file.
-
+ 
 ### Dataset Columns
 1. **`animal_id`**: Unique ID for each animal.
 2. **`name`**: Name of the animal (NaN if unnamed).
@@ -45,7 +48,7 @@ Detailed steps can be found in the `time_shelter_dataset` file.
 12. **`datetime_outcome`**: Adoption date and time.
 13. **`outcome_type`**: Final outcome status (always "Adoption").
 
----
+-------
 
 ## Prerequisites
 - **`git`**: To clone the repository.
@@ -53,8 +56,7 @@ Detailed steps can be found in the `time_shelter_dataset` file.
 - **`Docker`**: For deployment and testing.
 - **`AWS CLI`**: For cloud-based services (optional).
 
----
-
+-------
 ## Steps to Install
 1. Clone the repository:
    ```bash
@@ -62,26 +64,33 @@ Detailed steps can be found in the `time_shelter_dataset` file.
 
 2. create conda environment with python 3.11
  ```bash
-   conda create -n ml-shelter python=3.10
+   conda create -n ml-shelter python=3.11
    ```
 3. Activate the the virtual environment:
-
    ```bash
    conda activate ml-shelter
    ```
-4. install required python packages (go to the path where the repository is located  ¨cd .../shelter_addoption_days_ML_prediction) 
+4. install required python packages (go to the path where the repository is located  ¨cd .../shelter_addoption_days_ML_prediction¨) 
    ```bash
     pip install -r requirements.txt
    ```
-4. Install the pip environment. for that pipenv is needed
-pip install pipenv
+4. Install the pipenv 
+for that pipenv is needed:
 
-5. pipenv install
+   ```bash
+    pip install pipenv
+   ```
+then run 
 
-6. activate the environment 
-pipenv shell
+   ```bash
+   pipenv install 
+   ```
 
-
+activate the environment:
+   ```bash
+   pipenv shell
+   ```
+-------
 ## Steps to create the docker container and run the service
 1. create docker container using puthon 3.11-slim:
    ```bash
@@ -108,7 +117,7 @@ pipenv shell
    ```
 To stop the service, press `Ctrl+C` in the terminal.
 
-
+-------
 ## Using model in AWS
 the jupyter notebook called ¨predict_test_AWS.ipynb¨is ready with the ULR of the service and can be used.
 See here how to use it:
