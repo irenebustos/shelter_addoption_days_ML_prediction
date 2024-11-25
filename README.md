@@ -73,6 +73,14 @@ Detailed steps can be found in the `time_shelter_dataset` file.
    ```bash
     pip install -r requirements.txt
    ```
+4. Install the pip environment. for that pipenv is needed
+pip install pipenv
+
+5. pipenv install
+
+6. activate the environment 
+pipenv shell
+
 
 ## Steps to create the docker container and run the service
 1. create docker container using puthon 3.11-slim:
@@ -99,3 +107,9 @@ Detailed steps can be found in the `time_shelter_dataset` file.
     python predict_test_.py
    ```
 To stop the service, press `Ctrl+C` in the terminal.
+
+
+## Using model in AWS
+the jupyter notebook called ¨predict_test_AWS.ipynb¨is ready with the ULR of the service and can be used.
+See here how to use it:
+[Title](<../../../../../Desktop/Screen Recording 2024-11-25 at 20.53.35.mov>)
