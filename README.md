@@ -1,5 +1,5 @@
-![Alt text](image.png)# Shelter Animal Adoption Prediction
 
+# Shelter Animal Adoption Prediction
 ![Alt text](image.png)
 
 ## Table of Contents
