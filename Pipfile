@@ -15,4 +15,4 @@ xgboost = "*"
 awsebcli = "*"
 
 [requires]
-python_ve
+python_version = "3.11"
