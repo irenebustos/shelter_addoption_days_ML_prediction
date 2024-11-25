@@ -112,4 +112,4 @@ To stop the service, press `Ctrl+C` in the terminal.
 ## Using model in AWS
 the jupyter notebook called ¨predict_test_AWS.ipynb¨is ready with the ULR of the service and can be used.
 See here how to use it:
-[Title](<AWS_uage.mov>)
+[Watch the video demo](AWS_usage.mov)
